@@ -1,0 +1,16 @@
+spring:
+  ### kafka
+  ### producer ≈‰÷√
+  kafka:
+    producer:
+      bootstrap-servers: 118.24.119.161:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    ### consumer ≈‰÷√
+    consumer:
+      enable-auto-commit: true
+      group-id: sunwukong
+      auto-offset-reset: latest
+      bootstrap-servers: 118.24.119.161:9092
+server:
+  port: 3396
